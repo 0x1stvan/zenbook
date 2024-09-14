@@ -9,10 +9,9 @@ shutdown -P 120
 echo 0 > /sys/class/leds/asus::kbd_backlight/brightness
 ```
 
-#### Change display brightness
-
+#### Change display brightness with brightnessctl:
 ```
-xrandr --output eDP --brightness .45
+brightnessctl set 10%
 ```
 
 ### Set battery charge limit to 60% with tlp (https://linrunner.de/tlp/index.html):
