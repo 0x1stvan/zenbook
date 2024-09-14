@@ -20,6 +20,26 @@ sudo add-apt-repository ppa:linrunner/tlp
 sudo apt update
 sudo apt install tlp tlp-rdw
 sudo tlp start
+```
+#### Check your batttery name
+```
+tlp-stat -b
+```
+
+```
++++ Battery Status: BATT
+/sys/class/power_supply/BATT/manufacturer                   = ASUSTeK
+/sys/class/power_supply/BATT/model_name                     = UM3402
+/sys/class/power_supply/BATT/cycle_count                    =    146
+/sys/class/power_supply/BATT/charge_full_design             =   9420 [mAh]
+/sys/class/power_supply/BATT/charge_full                    =   8479 [mAh]
+/sys/class/power_supply/BATT/charge_now                     =   5850 [mAh]
+/sys/class/power_supply/BATT/current_now                    =   1689 [mA]
+/sys/class/power_supply/BATT/status                         = Charging
+```
+
+#### Set charge limit
+```
 sudo tlp setcharge 0 60 BATT
 ```
 
