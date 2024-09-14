@@ -20,6 +20,7 @@ sudo add-apt-repository ppa:linrunner/tlp
 sudo apt update
 sudo apt install tlp tlp-rdw
 sudo tlp start
+sudo systemctl enable tlp.service
 ```
 #### Check your batttery name
 ```
