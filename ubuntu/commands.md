@@ -22,3 +22,9 @@ sudo apt install tlp tlp-rdw
 sudo tlp start
 sudo tlp setcharge 0 60 BATT
 ```
+
+### Disable & enable webcam
+```
+modprobe -r uvcvideo
+modprobe uvcvideo
+```
