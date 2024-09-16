@@ -49,3 +49,12 @@ sudo tlp setcharge 0 60 BATT
 modprobe -r uvcvideo
 modprobe uvcvideo
 ```
+
+### Disable webcam permanently
+
+```
+Add blacklist end of the file
+sudo nano /etc/modprobe.d/
+
+blacklist uvcvideo
+```
