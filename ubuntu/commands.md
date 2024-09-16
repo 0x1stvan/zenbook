@@ -44,6 +44,15 @@ tlp-stat -b
 sudo tlp setcharge 0 60 BATT
 ```
 
+### Set charge limit in config
+```
+sudo nano /etc/tlp.d/00-template.conf
+
+STOP_CHARGE_THRESH_BAT0="60"
+#STOP_CHARGE_THRESH_BAT1="65"
+
+```
+
 ### Disable & enable webcam
 ```
 modprobe -r uvcvideo
