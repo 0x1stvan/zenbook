@@ -54,7 +54,7 @@ modprobe uvcvideo
 
 ```
 Add blacklist end of the file
-sudo nano /etc/modprobe.d/
+sudo nano /etc/modprobe.d/blacklist.conf
 
 blacklist uvcvideo
 ```
