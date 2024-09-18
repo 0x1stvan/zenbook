@@ -67,3 +67,10 @@ sudo nano /etc/modprobe.d/blacklist.conf
 
 blacklist uvcvideo
 ```
+
+### Disable bluetooth on startup
+```
+/etc/bluetooth/main.conf
+
+AutoEnable=false
+```
