@@ -74,3 +74,13 @@ blacklist uvcvideo
 
 AutoEnable=false
 ```
+
+### Disable wireless powersaving
+```
+nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+
+[connection]
+wifi.powersave = 2
+```
+
+
